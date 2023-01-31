@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Event Listener</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Lato", sans-serif;
+      }
+      body {
+        background-color: rgb(24, 24, 50);
+        color: white;
+      }
+      .container h1 {
+        margin: 50px;
+        font-size: 70px;
+        text-align: center;
+      }
+      .container {
+        flex-direction: row;
+        align-items: center;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 3px solid white;
+        padding: 80px 50px;
+        font-size: 40px;
+        border-radius: 20px;
+      }
+      .box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 3px solid white;
+        padding: 80px 50px;
+        font-size: 40px;
+        border-radius: 20px;
+      }
+      .box3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 3px solid white;
+        padding: 80px 50px;
+        font-size: 40px;
+        border-radius: 20px;
+      }
+
+      .btn {
+        position: relative;
+        left: 25px;
+        margin-top: 200px;
+        width: 150px;
+        color: white;
+        background-color: rgba(0, 0, 255, 0);
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 40px;
+        padding: 20px 20px;
+
+        font-weight: bolder;
+        transition: 0.2s ease-in-out;
+      }
+      .btn:hover {
+        background-color: white;
+        color: rgb(24, 24, 50);
+        transition: 0.2s ease-in-out;
+      }
+      .btn:active {
+        background-color: lightgray;
+        color: grey;
+        font-weight: bolder;
+        transition: 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Event Listeners</h1>
+      <div class="container2">
+        <div class="box1">
+          <h3>Example 1</h3>
+          <button
+            class="btn"
+            id="btn-1"
+            type="button"
+            onclick="alert('I Love Javascript')"
+          >
+            Enter
+          </button>
+        </div>
+        <div class="box2">
+          <h3>Example 2</h3>
+          <button class="btn" id="btn-2" type="button">Enter</button>
+        </div>
+        <div class="box3">
+          <h3>Example 3</h3>
+          <button class="btn" id="btn-3" type="button">Enter</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

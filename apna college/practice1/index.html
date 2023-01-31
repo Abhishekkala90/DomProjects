@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation</title>
+  </head>
+  <body>
+    <ul>
+      <li>First Element</li>
+      <li>Second Element</li>
+      <li>Third Element</li>
+    </ul>
+    <script>
+      //Root Node
+      //   console.log(document.documentElement);
+      //   console.log(document.head);
+      //   console.log(document.body);
+      //   //childrens
+      //   console.log(document.body.children);
+      //   it gives us an object to iterate it we can use for of loop
+      for (node of document.body.childNodes) {
+        console.log(node);
+      }
+      //   to convert this thing in Array
+      const element = Array.from(document.body.childNodes);
+      console.log(element);
+
+      console.log(document.body.childNodes);
+      //firstchild and last child
+      //   console.log(document.body.firstChild);
+      //   console.log(document.body.firstElementChild);
+
+      //   console.log(document.body.lastChild);
+      //   console.log(document.body.lastElementChild);
+
+      //sibling tags
+      const ul = document.body.children[0];
+      console.log(ul.nextSibling);
+      console.log(ul.nextElementSibling);
+      console.log(ul.previousSibling);
+      console.log(ul.previousElementSibling);
+      const firstli = ul.children[0];
+      const secondli = ul.children[1];
+      console.log(firstli.nextElementSibling);
+      console.log(secondli.previousElementSibling);
+    </script>
+  </body>
+</html>
